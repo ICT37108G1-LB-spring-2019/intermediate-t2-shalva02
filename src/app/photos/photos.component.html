@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem;" *ngIf="photo">
+  <img
+    [src]="photo.url"
+    class="card-img-top"
+    style="width:100px; height:100px;"
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ photo.title }}</h5>
+  </div>
+</div>

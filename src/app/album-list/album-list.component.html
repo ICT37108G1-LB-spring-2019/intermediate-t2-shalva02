@@ -1,0 +1,5 @@
+<app-spinner *ngIf="loading"></app-spinner>
+<ul class="list-group">
+  <app-album-item *ngFor="let item of albumItems" [albumItem]="item">
+  </app-album-item>
+</ul>

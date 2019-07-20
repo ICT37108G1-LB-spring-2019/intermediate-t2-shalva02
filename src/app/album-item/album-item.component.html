@@ -1,0 +1,5 @@
+<li class="list-group-item" (click)="loadPhoto(albumItem.id)">
+  <span>{{ albumItem.title }}</span>
+  <app-spinner *ngIf="loading"></app-spinner>
+  <app-photos [photo]="photoItem" *ngIf="!loading"></app-photos>
+</li>
